@@ -16,6 +16,8 @@ public class Junit5_Integration_Test {
     @Story("Test Story")
     @Description("This test will onboard the user")
     @DisplayName("Testing the CASA onboarding")
+    @Link(name = "Requirement ID", url = "NEX-123", type = "Requirement")
+    @Issue("SOME-123")
     void onboardingTheUserITest() {
         userCleanup();
         iamUserCreation();
